@@ -12,7 +12,6 @@
 			href="./assets/images/favicon-32x32.png"
 		/>
 		<link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
-
 		<title>Frontend Mentor | Mortgage repayment calculator</title>
 	</head>
 	<body>
@@ -26,17 +25,26 @@
 					<a href="#">Clear All</a>
 				</header>
 				<article class="input-wrapper">
-					<div class="input-item">
-						<label for="amount">Mortgage Amount</label>
-						<input type="number" name="" id="amount" value="" class="amount" />
+					<div class="amount-item">
+						<label for="">Mortgage Amount</label>
+						<div class="amount-input-area">
+							<div class="tile"><h4>£</h4></div>
+							<input type="number" name="" id="amount" class="input" />
+						</div>
 					</div>
-					<div class="input-item">
-						<label for="term">Mortgage Term</label>
-						<input type="number" name="" id="term" value="" class="term" />
+					<div class="term-item">
+						<label for="">Mortgage Term</label>
+						<div class="term-input-area">
+							<input type="number" name="" id="term" class="second-input" />
+							<div class="tile"><h4>year</h4></div>
+						</div>
 					</div>
-					<div class="input-item">
-						<label for="rate">Interest Rate</label>
-						<input type="number" name="" id="rate" value="" class="rate" />
+					<div class="rate-item">
+						<label for="">Interest Rate</label>
+						<div class="rate-input-area">
+							<input type="number" name="" id="rate" class="second-input" />
+							<div class="tile"><h4>%</h4></div>
+						</div>
 					</div>
 				</article>
 				<article class="type-wrapper">

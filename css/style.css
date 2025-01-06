@@ -79,49 +79,99 @@ label {
 
 	.input-wrapper {
 		width: 100%;
-
+		height: 40%;
+		position: relative;
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		flex-wrap: wrap;
 		gap: 2%;
 	}
 
-	.input-item {
+	.amount-item {
+		position: absolute;
+		top: 0;
 		width: 100%;
-		height: 50px;
-		position: relative;
 		display: flex;
 		flex-direction: column;
-		gap: 5px;
-		margin-bottom: 10px;
+		align-items: start;
+		justify-content: center;
+		gap: 8px;
 	}
 
-	.input-item:nth-child(2),
-	.input-item:nth-child(3) {
-		flex: 1 1 49px;
+	.amount-input-area {
+		width: 100%;
+		height: 40px;
+		display: flex;
+		border: 1px solid grey;
+		border-radius: 5px;
 	}
 
-	.input-item::after {
-		content: '£';
+	.input {
+		width: 100%;
+		border: none;
+		border-radius: 5px;
+	}
+
+	.term-item {
 		position: absolute;
-		width: 30px;
-		height: 25px;
-		left: 1px;
-		top: 50%;
-		background-color: var(--Slate-100);
-		font-size: 16px;
+		bottom: 0;
+		left: 0;
+		width: 45%;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		justify-content: center;
+		gap: 8px;
 	}
 
-	input {
-		height: 100%;
+	.term-input-area {
+		height: 40px;
+		display: flex;
+		border: 1px solid grey;
+		border-radius: 5px;
 	}
 
-	.amount:after {
-		content: '';
-		width: 20px;
-		height: 100%;
+	.second-input {
+		width: 100%;
+		border: none;
+		border-radius: 5px;
+	}
+
+	.rate-item {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 45%;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		justify-content: center;
+		gap: 8px;
+	}
+
+	.rate-input-area {
+		height: 40px;
+		display: flex;
+		border: 1px solid grey;
+		border-radius: 5px;
+	}
+
+	.tile {
+		width: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		background-color: var(--Slate-100);
+	}
+
+	.tile:nth-child(2) {
+		padding: 5px 30px;
+	}
+
+	.tile > h4 {
+		font-size: 14px;
 	}
 
 	.result {
